@@ -1,14 +1,11 @@
 /*
 
 Gustavo Petrov - Div D
-E/S Ejercicio 9
+E/S Ejercicio 9-bis
 
 Enunciado:
 ----------
-Debemos lograr tomar el importe por ID ,
-transformarlo a entero (parseInt), luego
-mostrar el importe con un aumento del 10 %
-en el cuadro de texto "RESULTADO".
+E/S 9 bis: Se pedirá el importe del aumento por prompt.
 
 */
 
@@ -19,7 +16,9 @@ function mostrarAumento() {
   let resultado;
   let mensaje;
 
-  porcentajeDeAumento = 10;
+  porcentajeDeAumento = prompt("Inrgese el porcentaje de aumento deseado: ");
+  porcentajeDeAumento = parseFloat(porcentajeDeAumento);
+
   importe = document.getElementById("txtIdSueldo").value;
   importe = parseFloat(importe);
 
